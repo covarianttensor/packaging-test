@@ -30,7 +30,7 @@ add_executable(CasterSoundboard ${CasterSoundboard_SRCS}
     main.cpp
 )
 
-set_target_properties(CasterSoundbaord PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/CasterSoundboard)
+set_target_properties(CasterSoundboard PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/CasterSoundboard)
 
 target_link_libraries(CasterSoundboard LINK_PUBLIC Qt5::QuickControls2 Qt5::Widgets Qt5::Quick Qt5::DBus Qt5::Core KF5::Notifications)
 
