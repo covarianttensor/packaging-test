@@ -57,20 +57,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 linux {
-    appdata.files = ../dist/linux/CasterSoundboard.appdata.xml
+    appdata.files = com.covarianttensor.CasterSoundboard.appdata.xml
     appdata.path = $$DATADIR/appdata/
 
-    desktop.files = ../dist/linux/CasterSoundboard.desktop
+    desktop.files = com.covarianttensor.CasterSoundboard.desktop
     desktop.path = $$DATADIR/applications/
 
-    pixmap.files = ../dist/linux/CasterSoundboard.png
+    pixmap.files = com.covarianttensor.CasterSoundboard.png
     pixmap.path = $$DATADIR/pixmaps/
 
     INSTALLS += appdata desktop pixmap
-}
-
-macx {
-    ICON = ../dist/macos/CasterSoundboard.icns
 }
 
 target.path = $$BINDIR
